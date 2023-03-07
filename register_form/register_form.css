@@ -1,0 +1,361 @@
+/* =========== 공통부분, Header, oo탭영역 =========== */
+
+/* --- 인라인 블럭 처리 구역, 가상 선택자 --- */
+
+/*
+색상 복붙
+
+===흰색===
+#FFF
+#F8F8F8
+
+===주황색===
+#F1D6AB
+#E3B04B
+#FBD46D
+
+===검정색===
+#2b2b2b
+#000
+
+===회색===
+#6B6B6B
+#595959
+#949494
+
+border:1px solid #F2F2F2; 
+box-shadow:1px 1px 2px 0 rgb(0 0 0 / 20%);
+
+border:1px solid #e5e5e5;
+*/
+
+/* =========== 공통부분 =========== */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    /* outline: 1px solid; */
+}
+
+body {
+    width: 100%;
+    min-width: 1280px;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+
+    font-family: 'Pretendard Regular';
+}
+
+/* =========== 회원가입 폼 =========== */
+fieldset {
+    border: none;
+    margin: 30px 0;
+    font-family: 'Pretendard Regular';
+}
+
+legend {
+    margin: 30px 0;
+    font-family: 'Pretendard Black' !important;
+    font-size: 28px;
+
+}
+
+.register_form {
+    border-width: 3px 0px;
+    border-style: solid;
+    border-collapse: collapse;
+}
+
+/* --- grid 정렬 --- */
+.member_form {
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-rows: repeat(4, 64px) 90px;
+    /* 100px 64px */
+}
+
+.member_form div>* {
+    display: flex;
+    align-items: center;
+}
+
+/* --- 버튼 --- */
+.btnMedium {
+    width: 120px;
+    height: 33px;
+    font-family: 'Pretendard Bold';
+}
+
+.btnLarge {
+    width: 150px;
+    height: 33px;
+    font-family: 'Pretendard Bold';
+}
+
+.btnXLarge {
+    width: 240px;
+    height: 45px;
+    font-family: 'Pretendard Black';
+}
+
+.btnOrange {
+    background-color: #f1d6ab;
+    border-style: none;
+    justify-content: center;
+}
+
+.btnRealorange {
+    background-color: #E3B04B;
+    border-style: none;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+}
+
+.btnMedium:hover,
+.btnLarge:hover {
+    background-color: #E3B04B;
+}
+
+.btnXLarge:hover {
+    color: black;
+}
+
+/* --- 음영 가이드설명 --- */
+.subtxt {
+    opacity: .4;
+}
+
+/* =========== 아이디, 비밀번호 =========== */
+
+.grid_Wrap {
+    display: grid;
+    grid-template-columns: 150px 230px 150px auto;
+
+    padding: 15px 0px;
+
+    border-bottom: 1px solid #949494;
+    border-collapse: collapse;
+}
+
+
+.grid_Wrap .btnMedium {
+    grid-area: 1 / 3 / 1 / 4;
+}
+
+.grid_Wrap .subtxt {
+    grid-area: 1 / 4 / 1 / 5;
+}
+
+.id_input,
+.pw_input,
+.pwchk_input {
+    width: 220px;
+    height: 33px;
+}
+
+/* =========== 휴대폰 번호 =========== */
+.grid_Wrap_phone {
+    height: 64px;
+    padding: 15px 0px;
+    
+    display: grid;
+    grid-template-columns: 150px repeat(3, 80px) auto;
+
+    border-bottom: 1px solid #949494;
+    box-sizing: border-box;
+
+}
+
+.grid_Wrap_phone .input_comm {
+    width: 60px;
+}
+
+.select_comm select {
+    width: 60px;
+    height: 33px;
+}
+
+/* =========== 이메일 주소 =========== */
+.grid_Wrap_email {
+    height: 90px;
+    padding: 15px 0px;
+    
+    display: grid;
+    grid-template-columns: 150px 180px 25px 180px 160px auto;
+
+    border-bottom: 1px solid #949494;
+    box-sizing: border-box;
+}
+
+.email_input {
+    width: 170px;
+    height: 33px;
+}
+
+.select_comm .mailselect {
+    width: 150px;
+}
+
+.grid_Wrap_email label {
+    grid-area: 1 / 1 / 3 / 1;
+}
+
+.grid_Wrap_email .subtxt {
+    grid-area: 2 / 2 / 3 / 7;
+    margin-top: 10px;
+}
+
+/* =========== 주소 =========== */
+/* .grid_Wrap_address {
+    height: 100px;
+    align-items: center;
+    padding: 15px 0px;
+    
+    display: grid;
+    grid-template-columns: 150px 105px 25px 110px auto;
+
+    border-bottom: 1px solid #949494;
+    box-sizing: border-box;
+}
+
+.add_num_input {
+    width: 90px;
+    height: 33px;
+    box-sizing: border-box;
+}
+
+.add_input {
+    width: 220px;
+    height: 33px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.grid_Wrap_address p {
+    grid-area: 1 / 1 / 3 / 1;
+}
+
+.grid_Wrap_address .add_input {
+    grid-area: 2 / 2 / 3 / 5;
+}
+
+.grid_Wrap_address .add_input+input {
+    grid-area: 2 / 5 / 3 / 8;
+} */
+
+/* =========== 관심 카테고리 =========== */
+/* .grid_Wrap_int {
+    padding: 15px 0px;
+    
+    display: grid;
+    grid-template-columns: 150px 230px 150px auto;
+
+    border-bottom: 3px solid black;
+    border-collapse: collapse;
+}
+
+.grid_Wrap_int>.select_comm>select {
+    width: 220px;
+    height: 33px;
+} */
+
+/* =========== 동의영역 =========== */
+.agreeBox {
+    height: 713px;
+}
+
+.agreeBox .agree_title {
+    padding: 20px 0px;
+    border-bottom: 1px solid #949494;
+    border-collapse: collapse;
+}
+
+.agree_title label {
+    vertical-align: middle;
+}
+
+.agreeBox .agree_Wrap {
+    padding: 15px 27px;
+}
+
+.agree_Wrap ul li {
+    margin: 10px 0px;
+}
+
+.agree_title label {
+    font-family: 'Pretendard Bold';
+    font-size: 20px;
+}
+
+.agreeBox input {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.agreeBox {
+    font-family: 'Pretendard Regular';
+}
+
+.agreeBox .textarea p {
+    width: 100%;
+    height: 160px;
+
+    box-sizing: border-box;
+    padding: 10px 13px;
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+
+    overflow-y: scroll;
+    resize: none;
+
+    font-family: 'Pretendard Regular';
+    font-size: 14px;
+
+    white-space: pre-wrap;
+}
+
+.agreeBox .agree_scroll_box {
+    width: 100%;
+    height: 160px;
+
+    box-sizing: border-box;
+    padding: 10px 13px;
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+
+    overflow-y: scroll;
+
+    font-family: 'Pretendard Regular';
+}
+
+.agreeBox .agree_scroll_box p {
+    font-family: 'Pretendard Regular';
+    font-size: 14px;
+    color: #2b2b2b;
+}
+
+.agreeBox .agree_scroll_box p span {
+    display: block;
+    margin-top: 8px;
+    font-family: 'Pretendard Regular';
+    font-size: 12px;
+    color: #6c6c6c;
+}
+
+/* =========== 회원가입 버튼 =========== */
+.button_area {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+body>main button {
+    cursor: pointer;
+}

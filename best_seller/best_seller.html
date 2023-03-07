@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best_Seller_Page</title>
+
+    <!-- font-awesome + script -->
+    <script src="https://kit.fontawesome.com/1c647ee8b4.js" crossorigin="anonymous"></script>
+    <script defer src="../header/javascript/index.js"></script>
+    <script defer src="./js/index.js"></script>
+    <!-- 폰트 + 페이지 css -->
+    <link rel="stylesheet" href="../font/font.css">
+    <link rel="stylesheet" href="../header/header.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="./best_seller.css">
+    <script src="https://kit.fontawesome.com/bfb0334003.js" crossorigin="anonymous"></script>
+
+    
+</head>
+
+<body class="Pre_R">
+    <header>
+        <div class="header_wrap header">
+            <div class="top-header">
+                <div class="topcoupon">
+                    <a href="../member_join/member_join.html" class="freecoupon">지금 회원 가입 시, 첫 주문 배송비 무료쿠폰 증정!</a>
+                </div>
+                <div class="loginMenu">
+                    <div class="search-box" id="search-box">
+                        <input type="text" class="search-txt" name="" placeholder="찾으시는 제품을 입력해 주세요.">
+                        <a class="search-btn" href="#" id="search-btn">
+                            <i></i>
+                        </a>
+                    </div>
+    
+                </div>
+            </div>
+            <!-- ============메인로고, 메뉴카테고리========================== -->
+            <!-- ===========상단 메뉴============ -->
+    
+            <nav class="header_nav">
+                <div class="navbar">
+                    <a href="../index.html"><img class="nav_logo" src="../image/logo_OG_com.png" alt="THE FIXER LOGO"></a>
+    
+    
+                    <!-- 드롭다운1 -->
+                    <div class="dropdown" id="dropdown">
+                        <!-- dropdown button -->
+                        <!-- 햄버거 button -->
+                        <button class="dropbtn">
+                            <a class="category" href="#">
+                                <input type="checkbox" id="check_box">
+                                <label class="burgerx" for="check_box">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </label>카테고리
+                            </a>
+                        </button>
+                        <!-- 드롭다운 내용물 -->
+                        <div class="dropdown-content">
+                            <!-- 드롭다운 내용물 : 제목 -->
+                            <!-- <div class="header">
+                                        <h2>메가 메뉴</h2>
+                                    </div> -->
+                            <!-- 드롭다운 내용물 : 카테고리 모음 -->
+                            <div class="row">
+                                <!-- <div class="category_top">
+                                    <span>전체메뉴</span>
+                                </div> -->
+    
+                                <div class="menu_page">
+                                    <ul class="header_menu">
+                                        <li class="has-dropdown">
+                                            <a href="#">CPU</a>
+                                            <div class="mega_menu">
+                                                <div class="col">
+                                                    <ul>
+                                                        <li>INTEL</li>
+                                                        <li>AMD</li>
+                                                        <li>서버용</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+    
+                                        <li class="has-dropdown">
+                                            <a href="#">메인보드</a>
+                                            <div class="mega_menu">
+                                                <div class="col">
+                                                    <ul>
+                                                        <li>테스트</li>
+                                                        <li>테스트</li>
+                                                        <li>테스트</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+    
+                                        <li class="has-dropdown">
+                                            <a href="#">RAM</a>
+                                            <div class="mega_menu">
+                                                <div class="col">
+                                                    <ul>
+                                                        <li>테스트</li>
+                                                        <li>테스트</li>
+                                                        <li>테스트</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+    
+                                        <li class="has-dropdown">
+                                            <a href="#">그래픽카드</a>
+                                            <div class="mega_menu">
+                                                <div class="col">
+                                                    <ul>
+                                                        <li>테스트</li>
+                                                        <li>테스트</li>
+                                                        <li>테스트</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+    
+                                        <li class="has-dropdown">
+                                            <a href="#">저장장치</a>
+                                            <div class="mega_menu">
+                                                <div class="col">
+                                                    <ul>
+                                                        <li>테스트</li>
+                                                        <li>테스트</li>
+                                                        <li>테스트</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+    
+                                        <li class="has-dropdown">
+                                            <a href="#">파워</a>
+                                            <div class="mega_menu">
+                                                <div class="col">
+                                                    <ul>
+                                                        <li>테스트</li>
+                                                        <li>테스트</li>
+                                                        <li>테스트</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="has-dropdown">
+                                            <a href="#">케이스</a>
+                                            <div class="mega_menu">
+                                                <div class="col">
+                                                    <ul>
+                                                        <li>테스트</li>
+                                                        <li>테스트</li>
+                                                        <li>테스트</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div>
+                        <a href="../best_seller/best_seller.html">FIXER 추천!</a>
+                    </div>
+    
+                    <div>
+                        <a href="../community/community_main.html">커뮤니티</a>
+                    </div>
+    
+                    <div>
+                        <a href="../service_center/service_center.html">고객센터</a>
+                    </div>
+    
+                    <div class="loginMenu">
+                        <ul>
+                            <li>
+                                <a href="../log_in/log_in.html">로그인 &#124;</a>
+                            </li>
+                            <li>
+                                <a href="../shopping_basket/Shopping_Basket.html">장바구니 &#124;</a>
+                            </li>
+                            <li>
+                                <a href="../mypage/mypage.html">마이페이지 &#124;</a>
+                            </li>
+                            <li>
+                                <a href="../service_center/service_center.html">고객센터</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <aside id="sideNavContainer" class="sideNavContainer">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#productCpu" class="navbox">
+                        <div>CPU</div>
+                        <img src="./image/cpu_img_mini.jpg" alt="cpuImg">
+                    </a>
+                </li>
+                <li>
+                    <a href="#productMainboard" class="navbox">
+                        <div>Mainboard</div>
+                        <img src="./image/mainboard_img_mini.jpg" alt="mainboardImg">
+                    </a>
+                </li>
+                <li>
+                    <a href="#productVGA" class="navbox">
+                        <div>VGA</div>
+                        <img src="./image/vga_img_mini.png" alt="VGAImg">
+                    </a>
+                </li>
+                <li>
+                    <a href="#productCase" class="navbox">
+                        <div>Case</div>
+                        <img src="./image/chase_img_mini.jpg" alt="CaseImg">
+                    </a>
+                </li>
+                <li>
+                    <a href="#productSSD" class="navbox">
+                        <div>SSD</div>
+                        <img src="./image/ssd_img_mini_.jpg" alt="SSDImg">
+                    </a>
+                </li>
+                <li>
+                    <a href="#productRAM" class="navbox">
+                        <div>RAM</div>
+                        <img src="./image/ram_img_mini.jpg" alt="RAMImg">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="section_container" id="section_container">
+        <section id="productCpu">
+            <div class="sectionNav">
+                <a href="#">Intel</a>
+                <a href="#">AMD</a>
+            </div>
+            <div class="sectionContainer setWidthHeight">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer">
+            <div class="contain">
+                <div class="footerTop">
+                    <img src="../image/footer.png" alt="컴퓨터회사이미지">
+                </div>
+                <div class="footerBottom">
+                    <div class="info">
+                        <span class="sub_title">Company Information</span>
+                        <ul>
+                            <li>
+                                <span>경기도 성남시 분당구 돌마로 46 KR 5층 성남 그린 컴퓨터 아카데미</span>
+                            </li>
+                            <li>
+                                <span>대표 : 최원석</span><br>
+                                <span>개인정보보호 담당자 : 이학로</span>
+                            </li>
+                            <li>
+                                <span>상담 및 AS : 1234-1234</span><br>
+                                <span>FAX : 031-1234-1234</span><br>
+                                <span>이메일 : thepixer@gmail.com</span>
+                            </li>
+                            <li>
+                                <span>사업자번호 : 123-1234</span>
+                                <span>통신판매신고 : 1234-성남그린-12345</span><br>
+                                <span>분쟁조정기관표시 : 소비자보호원</span><br>
+                                <span>호스팅제공자 : (주)THE PIXER</span>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer_two">
+                        <div class="footerline">
+                            <ul class="footerinfo">
+                                <li>
+                                    <a href="#">회사소개</a>
+                                </li>
+                                <li>
+                                    <a href="#">이용약관</a>
+                                </li>
+                                <li>
+                                    <a href="#">개인정보취급방침</a>
+                                </li>
+                                <li>
+                                    <a href="#">고객만족센터</a>
+                                </li>
+                                <li>
+                                    <a href="#">제휴문의</a>
+                                </li>
+                                <li>
+                                    <a href="#">맞춤결제</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer_img">
+                            <a href="https://www.facebook.com/"><img class="footer_icon" src="../image/facebook_icon.png"
+                                    alt="Facebook 아이콘"></a>
+                            <a href="https://www.instagram.com/"><img class="footer_icon" src="../image/instagram_icon.png"
+                                    alt="instagram 아이콘"></a>
+                            <a href="https://blog.naver.com/greenseongnam"><img class="footer_icon3"
+                                    src="../image/naver_blog_icon.png" alt="네이버 블로그 아이콘"></a>
+                            <a href="https://twitter.com/"><img class="footer_icon4" src="../image/twitter_icon.png"
+                                    alt="twitter 아이콘"></a>
+                            <a href="https://www.youtube.com/"><img class="footer_icon" src="../image/youtube_icon.png"
+                                    alt="Youtube 아이콘"></a>
+                        </div>
+                        <div>
+                            <img class="footer_logo" src="../image/logo_BK_com.png" alt="THE PIXER 로고">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

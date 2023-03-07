@@ -1,0 +1,545 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* outline: 1px solid; */
+}
+
+body {
+    width: 100%;
+    min-width: 1280px;
+}
+
+
+main {
+    font-family: 'Pretendard Regular';
+    margin: 70px 0;
+}
+
+
+
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    font-size: 12px;
+}
+
+
+.inner_wrap hr {
+    background-color: #2b2b2b;
+    height: 3px;
+    border: 0;
+    opacity: .8;
+    margin-bottom: 40px;
+}
+
+
+
+/* =========== 공통부분, Header, oo탭영역 =========== */
+
+/* --- 인라인 블럭 처리 구역, 가상 선택자 --- */
+
+/*
+색상 복붙
+
+===흰색===
+#FFF
+#F8F8F8
+
+===주황색===
+#F1D6AB
+#E3B04B
+
+===검정색===
+#2b2b2b
+#000
+
+===회색===
+#6B6B6B
+#595959
+#949494
+
+border:1px solid #F2F2F2; 
+    box-shadow:1px 1px 2px 0 rgb(0 0 0 / 20%);
+
+border:1px solid #e5e5e5;
+*/
+
+
+/* 상담 센터 검색=========================================================================== */
+
+.secrch_content {
+    margin: auto;
+}
+
+
+.main_title {
+    font-size: 28px;
+    font-family: 'Pretendard Bold';
+    text-align: center;
+    color: #E3B04B;
+}
+
+
+
+.secrch_content .cs_secrch_box {
+    height: 44px;
+    width: 600px;
+    margin: 20px auto 0;
+    padding: 11px 25px 12px;
+    background-color: #F1D6AB;
+    border-radius: 22px;
+}
+
+.cs_secrch_box .search_input {
+    width: 500px;
+    border: 0px;
+    outline: 0px;
+    background: transparent;
+    line-height: 21px;
+    font-family: 'Pretendard Bold';
+    color: #595959;
+    letter-spacing: -0.5px;
+    font-size: 14px;
+}
+
+.secrch_content .cs_secrch_box a {
+    float: right;
+    color: #000;
+    font-size: 18px;
+}
+
+.secrch_content .keyword {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.secrch_content .keyword a {
+    margin: 10px;
+    color: #949494;
+    text-decoration: none;
+}
+
+
+/* 검색 아래 컨텐츠들 영역========================================================================================================================= */
+.cscenter_wrap {
+    margin-top: 40px;
+    /* background: #F1D6AB; */
+}
+
+.cscenter_wrap .inner_wrap {
+    width: 1280px;
+    margin: auto;
+}
+
+/*5개 큰 카테고리========================================================================================================================  */
+
+.width_clear {
+    /*수정 사항 ======= */
+    width: 300vw;
+    right: 100vw;
+    padding: 50px 0;
+    /* =================== */
+    background-color: #F1D6AB;
+    position: relative;
+}
+
+.width_clear>.main_link_box {
+    position: relative;
+    left: 100vw;
+}
+
+
+.cscenter_wrap .container {
+    width: 1280px;
+    padding: 41px 0 80px;
+}
+
+
+.container {
+    min-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main_link_box {
+    display: grid;
+    grid-template-columns: 170px 170px 170px 170px 170px;
+    gap: 87.5px;
+    height: 170px;
+}
+
+.main_link_box div {
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    padding: 30px 30px 0px 30px;
+    box-shadow: 0px 5px 10px 0px #666;
+}
+
+.main_link_box a>i {
+    color: #E3B04B;
+}
+
+.main_link_box a {
+    color: #6B6B6B;
+    text-decoration: none;
+}
+
+.main_link_box a>span {
+    font-size: 20px;
+    position: relative;
+    left: 4px;
+    font-family: 'Pretendard Bold';
+}
+
+.main_link_box a span i {
+    font-size: 16px;
+    position: relative;
+    bottom: 1px;
+}
+
+/* 자주 묻는 질문 글씨======================================================================================================================= */
+
+.contents_title {
+    font-family: 'Pretendard Bold';
+    font-size: 20px;
+    letter-spacing: -0.025em;
+}
+
+.contents_title a {
+    float: right;
+    text-decoration: none;
+    color: #E3B04B;
+}
+
+/*자주 묻는 질문 list들==================================================================================================================  */
+
+.contents_box {
+    background-color: white;
+    width: 1280px;
+    margin: auto;
+    box-shadow: 0px 3px 5px 0px #666;
+    margin: 25px 0px;
+}
+
+
+
+
+.qna_list .qnestion {
+    line-height: 65px;
+    border-bottom: 2px solid #666;
+    font-family: 'Pretendard Bold';
+    font-size: 14px;
+}
+
+
+.qna_list .q_tit {
+    width: 50px;
+    height: 65px;
+    margin: 0;
+    float: left;
+    text-align: center;
+    color: #E3B04B;
+    font-size: 30px;
+    font-family: 'Pretendard Bold';
+}
+
+.qna_list i {
+    float: right;
+    margin: 25px 20px 0px 0px;
+}
+
+.qnestion .text_box_1,
+.qnestion .text_box_2,
+.qnestion .text_box_3,
+.qnestion .text_box_4,
+.qnestion .text_box_5 {
+    background-color: #E3B04B;
+    margin: 0 30px;
+    padding: 0 25px;
+    font-family: 'Pretendard Bold';
+    color: #F8F8F8;
+}
+
+.qnestion .text_box_1 div,
+.qnestion .text_box_2 div,
+.qnestion .text_box_3 div,
+.qnestion .text_box_4 div,
+.qnestion .text_box_5 div {
+    line-height: 30px;
+
+}
+
+.qnestion .text_box_1 div span,
+.qnestion .text_box_2 div span,
+.qnestion .text_box_3 div span,
+.qnestion .text_box_4 div span,
+.qnestion .text_box_5 div span {
+    font-family: 'Pretendard Bold';
+}
+
+.qnestion .text_box_1 a,
+.qnestion .text_box_4 a,
+.qnestion .text_box_5 a {
+    color: #000;
+    text-decoration: none;
+    font-family: 'Pretendard Bold';
+}
+
+.qnestion .text_box_4 ul,
+.qnestion .text_box_5 ul {
+    line-height: 30px;
+    list-style: none;
+    padding-top: 30px;
+}
+
+/* 컴퓨전 중고==================================================================================================================================== */
+
+.qnestion .text_box_1 ol {
+    line-height: 35px;
+    padding-top: 30px;
+    font-family: 'Pretendard Bold';
+}
+
+.qnestion .text_box_1 ol li {
+    margin-left: 18px;
+}
+
+.qnestion .text_box_1 a {
+    color: #000;
+    text-decoration: none;
+    font-family: 'Pretendard Bold';
+}
+
+/* 주문 후 상품=================================================================================================================================================== */
+
+.qnestion .text_box_2 div:nth-child(2) {
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+/* 배송조회========================================================================================================================================================= */
+
+.qnestion .text_box_3 div {
+    padding: 30px 0;
+}
+
+.qnestion .text_box_3 img {
+    width: 800px;
+    height: auto;
+}
+
+
+/* 교환/반품=========================================================================================================================================================== */
+
+.qnestion .text_box_4 ul {
+    line-height: 30px;
+    list-style: none;
+    padding-top: 30px;
+}
+
+.qnestion .text_box_4 ul span {
+    font-family: 'Pretendard Bold';
+}
+
+/* 주문 당일============================================================================================================================================================== */
+
+.text_box_5 p {
+    line-height: 30px;
+    padding: 20px 0;
+}
+
+.text_box_5 span {
+    font-family: 'Pretendard Bold';
+}
+
+/*박스 부분들 ================================================================================================================================================== */
+
+.bookmark_box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 50px;
+
+}
+
+.bookmark_box a {
+    color: #E3B04B;
+    text-decoration-line: none;
+}
+
+.icon_box {
+    width: 100px;
+    height: 100px;
+    float: left;
+    background-color: #F1D6AB;
+    border-radius: 50%;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.fl_right,
+.fl_under_left,
+.fl_under_right {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0px 5px 10px 0px #666;
+    border-radius: 10px 0px;
+    padding: 55px;
+}
+
+/* #박스들=========================================================================================================== */
+
+.fl_left .bookmark_list li {
+    width: 100%;
+    line-height: 100px;
+    font-size: 18px;
+    text-align: center;
+    padding: 0;
+    background-color: white;
+    box-shadow: 0px 5px 10px 0px #666;
+    border-radius: 10px 0px;
+    list-style: none;
+}
+
+.fl_left .bookmark_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.bookmark_box a em {
+    color: #1C8FED;
+    padding-right: 5px;
+}
+
+
+.icon_box img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* pc 문제해결============================================================================================================== */
+
+.pc_text_box {
+    position: relative;
+    right: -20px;
+}
+
+.fl_right .pc_title {
+    font-size: 40px;
+    font-family: 'Pretendard Bold';
+}
+
+
+.pc_text_box .cont {
+    font-size: 19px;
+    color: #000;
+    font-family: 'Pretendard Bold';
+    padding-top: 6px;
+}
+
+/* 상담센너 전화===================================================================================================================== */
+
+.fl_under_left .icon_box {
+    font-size: 55px;
+    text-align: center;
+    color: #6B6B6B;
+}
+
+.fl_under_left .text_box {
+    position: relative;
+    right: -20px;
+}
+
+.fl_under_left .text_box p {
+    font-size: 30px;
+    font-family: 'Pretendard Bold';
+    color: #E3B04B;
+}
+
+.fl_under_left .text_box div {
+    padding-top: 6px;
+}
+
+.fl_under_left .text_box div p {
+    font-size: 19px;
+    color: #000;
+}
+
+.fl_under_left .text_box div p span {
+    font-family: 'Pretendard Bold';
+}
+
+
+
+
+/* 찾아오는길========================================================================================================================= */
+
+.fl_under_right .text_box {
+    position: relative;
+    right: -20px;
+}
+
+.fl_under_right .text_box p {
+    font-size: 30px;
+    font-family: 'Pretendard Bold';
+    color: #E3B04B;
+}
+
+.fl_under_right .text_box div {
+    padding-top: 6px;
+}
+
+.fl_under_right .text_box div p {
+    font-size: 19px;
+    color: #000;
+}
+
+.fl_under_right .text_box div p span {
+    font-family: 'Pretendard Bold';
+}
+
+
+
+
+
+
+
+/* 공지사항==================================================================================================== */
+
+.qna_list .notice {
+    line-height: 65px;
+    border-bottom: 2px solid #666;
+    font-size: 14px;
+}
+
+.qna_list .notice a {
+    text-decoration: none;
+    color: #000;
+}
+
+.qna_list .notice a span {
+    font-family: 'Pretendard Bold';
+    padding-left: 15px;
+}
+
+
+.qna_list .notice em {
+    float: right;
+    padding-right: 15px;
+    font-family: 'Pretendard Bold';
+    font-size: 18px;
+    color: #E3B04B;
+}

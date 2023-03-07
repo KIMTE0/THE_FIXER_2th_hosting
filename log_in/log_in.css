@@ -1,0 +1,351 @@
+/* =========== 공통부분, Header, oo탭영역 =========== */
+
+/* --- 인라인 블럭 처리 구역, 가상 선택자 --- */
+
+/*
+색상 복붙
+
+===흰색===
+#FFF
+#F8F8F8
+
+===주황색===
+#F1D6AB
+#E3B04B
+#FBD46D
+
+===검정색===
+#2b2b2b
+#000
+
+===회색===
+#6B6B6B
+#595959
+#949494
+
+border:1px solid #F2F2F2; 
+    box-shadow:1px 1px 2px 0 rgb(0 0 0 / 20%);
+
+border:1px solid #e5e5e5;
+*/
+/* =========== 공통부분 =========== */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    /* outline: 1px solid; */
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-width: 1280px;
+}
+
+main {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+
+    font-family: 'Pretendard Regular';
+}
+
+/* === 인라인 블럭 처리 구역 === */
+.login_logo,
+.login_logo>a,
+.login_container>.login_tab,
+.user_blind {
+    display: inline-block;
+}
+
+/* flex 박스 안배워서 float 사용, 클리어용 가상클래스 선택자 */
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* 로고 및 홈페이지 연동버튼 */
+fieldset {
+    border: none;
+    margin-top: 60px;
+}
+
+.login_logo {
+    background: url(../image/logo_OG.png) no-repeat center/100% 100%;
+    width: 350px;
+    height: 200px;
+    text-indent: -9999em;
+}
+
+/* ===== 로그인 탭 영역 ===== */
+
+.login_container {
+    margin: 60px auto;
+    width: 500px;
+    line-height: 1.5em;
+
+    font-family: 'Pretendard Black';
+    border: 0.125rem solid #F2F2F2;
+    box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 40%);
+    position: relative;
+    background: #fff;
+}
+
+
+/* .login_container>input[type="radio"] {
+    display: none;
+} */
+
+.login_Box {
+    width: 100%;
+    line-height: 1.5em;
+    display: none;
+}
+
+/* .login_container>label {
+    width: 50%;
+    height: 48px;
+    line-height: 48px;
+    float: left;
+    background-color: #E3B04B;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+} */
+
+.login_container>ul>.login_tab>a {
+    width: 50%;
+    height: 48px;
+    line-height: 48px;
+    float: left;
+    background-color: #E3B04B;
+    opacity: .7;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.login_container>ul>.login_tab>a {
+    color: #fff;
+}
+
+/* .login_container>input[type="radio"]:checked+label {
+    background-color: #fff;
+    color: #000 !important;
+    font-size: 18px;
+} */
+
+.login_container>.tabBtn>.on > a {
+    background-color: #fff;
+    color: #000 !important;
+    font-size: 18px;
+}
+
+.login_Box {
+    display: none;
+}
+
+
+/* input[id="Member_login"]:checked~.Mem {
+    display: block;
+}
+
+input[id="Non_Member_login"]:checked~.Non_Mem {
+    display: block;
+} */
+
+/* ===== 로그인탭 하단 박스영역 ===== */
+/* 아이디 비밀번호 이름 번호 주문번호 박스 */
+.Member {
+    width: 100%;
+}
+
+.inputWrap {
+    width: 100%;
+}
+
+.login_ipt_box {
+    width: 100%;
+    position: relative;
+}
+
+#member_id,
+#member_password,
+#nonmember_name,
+#nonmember_handphone3,
+#nonmember_orderno {
+    width: 70%;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    float: left;
+    left: calc((100% - 70%)/2);
+    margin-top: 1rem;
+}
+
+.user_blind {
+    text-indent: -9999em;
+}
+
+/* ===== 아이디 저장, 아이디 및 비밀번호 찾기 영역 ===== */
+.chkWrap {
+    position: relative;
+    float: left;
+    left: calc((100% - 70%)/2);
+}
+
+.idpwChk {
+    font-family: 'Pretendard Bold';
+}
+
+.idpwChk>p {
+    position: relative;
+    float: right;
+    right: calc((100% - 70%)/2);
+}
+
+.idpwChk {
+    margin-top: 13px;
+}
+
+.idpwChk input.login_chk[type="checkbox"]+label {
+    font-size: 14px;
+    color: #595959;
+
+}
+
+.idpwChk>p>a {
+    display: inline-block;
+    color: #595959;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* ===== 로그인 회원가입 조회하기 버튼 ===== */
+.login_btn {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-top: 13px;
+    text-align: center;
+}
+
+.login_btn>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 48px;
+    background: #E3B04B;
+    color: #000 !important;
+    font-size: 18px;
+}
+
+.login_btn_submit {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-top: 13px;
+    text-align: center;
+    font-family: 'Pretendard Black';
+
+    border: none;
+    line-height: 48px;
+    background: #E3B04B;
+    color: #000 !important;
+    font-size: 18px;
+}
+
+.member_join {
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Pretendard Black';
+}
+
+.member_join>a {
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 48px;
+    border: 1px solid #E3B04B;
+    background: #fff;
+    color: #000 !important;
+    font-size: 18px;
+}
+
+/* ===== 소셜 로그인 버튼 ===== */
+
+.social {
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+
+    font-family: 'Pretendard Black';
+}
+
+.social img {
+    vertical-align: middle;
+}
+
+.social>span {
+    display: inline-block;
+    width: 170px;
+    height: 38px;
+}
+
+.social>span>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 38px;
+    font-size: 14px;
+}
+
+.naver_login {
+    background: #1EC800;
+}
+
+.naver_login>a {
+    color: #fff !important;
+}
+
+.naver_login>a>i {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.kakao_login {
+    margin-left: 10px;
+    background: #FFEA0F;
+}
+
+.kakao_login>a {
+    color: #3C1E1E !important;
+}
+
+.kakao_login>a>i {
+    display: inline-block;
+    margin-right: 7px;
+    vertical-align: 1px;
+}
+
+/* ===== 비회원 조회하기 탭 영역 ===== */
+/* === 이름 번호 주문번호 박스 === */
+
+.join_txt {
+    margin-top: 10px;
+    color: #949494;
+    font-size: 14px;
+}
+
+.join_txt+.member_join {
+    margin-bottom: 20px;
+}
+
+/* .current{display:inherit;} */
+/* #user_blind{position:Absolute; left:15px; top:15px; color:#b4b4b4; font-size:16px; vertical-align:middle; font-weight:normal;} */

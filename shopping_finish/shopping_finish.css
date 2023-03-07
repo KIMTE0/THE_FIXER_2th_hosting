@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* outline: 1px solid; */
+}
+
+body {
+    width: 100%;
+    min-width: 1280px;
+}
+
+main {
+    font-family: 'Pretendard Regular';
+    margin: 70px 0;
+}
+
+
+
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    font-size: 12px;
+}
+
+
+
+input[type=checkbox] {
+    zoom: 1.8;
+}
+
+
+/* =========== 공통부분, Header, oo탭영역 =========== */
+
+/* --- 인라인 블럭 처리 구역, 가상 선택자 --- */
+
+/*
+색상 복붙
+
+===흰색===
+#FFF
+#F8F8F8
+
+===주황색===
+#F1D6AB
+#E3B04B
+
+===검정색===
+#2b2b2b
+#000
+
+===회색===
+#6B6B6B
+#595959
+#949494
+
+border:1px solid #F2F2F2; 
+    box-shadow:1px 1px 2px 0 rgb(0 0 0 / 20%);
+
+border:1px solid #e5e5e5;
+*/
+
+
+/* 장바구니 절차 이미지===================================================================================== */
+
+.purchase_process_img {
+    width: 1280px;
+    height: 127px;
+    border: 1px solid #F2F2F2;
+    box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 20%);
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-size: 15px;
+    position: relative;
+    box-shadow: 0px 1px 1px 0px #666;
+}
+
+.purchase_process_img .pr_num1 {
+    /* 삼각형 */
+    display: flex;
+    align-self: start;
+    width: 0;
+    border-bottom: 38px solid transparent;
+    border-top: 38px solid #E3B04B;
+    border-left: 38px solid transparent;
+    border-right: 38px solid transparent;
+    height: 0;
+    position: relative;
+    left: 820px;
+}
+
+.purchase_process_img .pr_num1 span {
+    position: absolute;
+    bottom: 9px;
+    transform: translateX(-7px);
+
+}
+
+
+.purchase_process_img>li span {
+    display: flex;
+    justify-content: end;
+}
+
+.purchase_process_list ul li {
+    font-size: 28px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 45px;
+}
+
+
+.purchase_process_list ul li:nth-child(1) {
+    font-size: 43px;
+    justify-self: left;
+    position: relative;
+    right: 250px;
+    color: #E3B04B;
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'Pretendard Black';
+}
+
+
+
+
+.purchase_process_list ul li:not(li:nth-child(1)) {
+    position: relative;
+    left: 260px;
+    margin-right: 10px;
+    color: #6B6B6B;
+    font-family: 'Pretendard Bold';
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+.order_basket_wrap .purchase_process_list ul li:nth-child(6) {
+    color: #E3B04B;
+}
+
+/* 아이콘 사이즈============================================================================= */
+
+.purchase_process_list ul li:nth-child(3) i,
+.purchase_process_list ul li:nth-child(5) i {
+    font-size: 25px;
+}
+
+
+.purchase_process_list ul li:nth-child(2) i,
+.purchase_process_list ul li:nth-child(4) i,
+.purchase_process_list ul li:nth-child(6) i {
+    font-size: 37px;
+    position: relative;
+    left: 8px;
+    top: 3px;
+}
+
+.purchase_process li {
+    list-style: none;
+    display: inline-block;
+
+
+}
+
+/* 주문 완료 문구 =================================================================================== */
+
+.content {
+    margin: 120px auto;
+    width: 1280px;
+
+}
+
+
+
+.order_complete {
+    height: 400px;
+    display: grid;
+    margin: auto;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+
+.order_complete i {
+    font-size: 180px;
+    color: #E3B04B;
+    background-color: #6B6B6B;
+    width: 300px;
+    height: 300px;
+    line-height: 300px;
+    border-radius: 50%;
+    position: relative;
+    left: 100px;
+}
+
+
+.order_complete .order_complete_title {
+    text-align: left;
+    font-size: 17px;
+    position: relative;
+    right: 160px;
+}
+
+.order_complete .order_complete_title p:nth-child(1) {
+    font-size: 45px;
+}
+
+.order_complete .order_complete_title p:nth-child(1) span {
+    font-size: 45px;
+    padding: 0;
+}
+
+.order_complete .order_complete_title span {
+    color: #E3B04B;
+    font-size: 30px;
+    padding-left: 20px;
+}
+
+
+/* 페이지 이동 버튼========================================================================================== */
+
+.page_move_btn {
+    width: 550px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+
+}
+
+
+.page_move_btn .order_inquiry,
+.page_move_btn .my_page {
+    font-family: 'Pretendard Black';
+    text-decoration: none;
+    width: 220px;
+    line-height: 57px;
+    font-size: 20px;
+    letter-spacing: -1px;
+    text-align: center;
+    margin-top: 10px;
+    box-shadow: 0px 1px 1px 0px #666;
+}
+
+.page_move_btn .order_inquiry {
+    /* 주문 조회 버튼 */
+    color: #fff;
+    background: #2b2b2b;
+    text-decoration: none;
+}
+
+.page_move_btn .order_inquiry:hover {
+    background-color: #6B6B6B;
+}
+
+.page_move_btn .my_page {
+    /* 마이 페이지 버튼 */
+    color: #2b2b2b;
+    background: #E3B04B;
+    text-decoration: none;
+}
+
+.page_move_btn .my_page:hover {
+    background-color: #F1D6AB;
+    color: #fff;
+}

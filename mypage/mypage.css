@@ -1,0 +1,65 @@
+/* =========== 공통부분, Header, oo탭영역 =========== */
+
+/* --- 인라인 블럭 처리 구역, 가상 선택자 --- */
+
+/*
+색상 복붙
+
+===흰색===
+#FFF
+#F8F8F8
+
+===주황색===
+#F1D6AB
+#E3B04B
+#FBD46D
+
+===검정색===
+#2b2b2b
+#000
+
+===회색===
+#6B6B6B
+#595959
+#949494
+
+border:1px solid #F2F2F2; 
+box-shadow:1px 1px 2px 0 rgb(0 0 0 / 20%);
+
+border:1px solid #e5e5e5;
+*/
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    /* outline: 1px solid; */
+}
+
+body {
+    width: 100%;
+    min-width: 1280px;
+}
+
+main {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+
+    font-family: 'Pretendard Regular';
+}
+
+.myP_inner {
+    display: flex;
+    width: 100vw;
+    height: 9.375rem;
+}
+
+#mypage_gnb_buy_price {
+    display: none;
+    position: absolute;
+}
+
+.blue_box {
+    display: none;
+}

@@ -1,0 +1,234 @@
+/* =========== 공통부분, Header, oo탭영역 =========== */
+
+/* --- 인라인 블럭 처리 구역, 가상 선택자 --- */
+
+/*
+색상 복붙
+
+===흰색===
+#FFF
+#F8F8F8
+
+===주황색===
+#F1D6AB
+#E3B04B
+
+===검정색===
+#2b2b2b
+#000
+
+===회색===
+#6B6B6B
+#595959
+#949494
+
+border:1px solid #F2F2F2; 
+    box-shadow:1px 1px 2px 0 rgb(0 0 0 / 20%);
+
+border:1px solid #e5e5e5;
+*/
+/* ===== 공통부분 ===== */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    /* outline: 1px solid; */
+}
+
+body {
+    width: 100%;
+    min-width: 1280px;
+}
+
+main {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+
+    font-family: 'Pretendard Regular';
+}
+
+#welcome_join_area {
+    width: 100%;
+}
+
+.welcome_join {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin-top: 50px;
+}
+
+/* .success_ico {
+    background: url(../image/check_circle_icon.png) no-repeat center/100% 100%;
+    width: 200px;
+    height: 200px;
+
+    margin: 50px 0px;
+} */
+
+.welcome_join h2::before {
+    content: "\f058";
+    font: var(--fa-font-solid);
+    font-size: 150px;
+    color: #E3B04B;
+}
+
+.welcome_join h2 p span {
+    font-size: 48px;
+    font-family: 'Pretendard Black';
+}
+
+.welcome_join h2 p {
+    font-size: 21px;
+    font-family: 'Pretendard Light';
+
+    margin-top: 50px;
+}
+
+.welcome_join h2 {
+    width: 100%;
+    letter-spacing: -1px;
+    margin-bottom: 50px;
+}
+
+.welcome_box {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Pretendard Regular';
+}
+
+.welcome_box>ul {
+    width: 600px;
+    height: 300px;
+    background: #fff;
+
+    box-sizing: border-box;
+    border: 1px solid #F2F2F2;
+    box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 20%);
+    padding: 35px;
+    margin-bottom: 100px;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+/* 버튼 전체 공통, 쇼핑 버튼 영역 */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+
+    width: 200px;
+    height: 50px;
+
+    font-family: 'Pretendard Bold';
+}
+
+.congratulation a::before {
+    content: "\f07a";
+    font: var(--fa-font-solid);
+    font-size: 18px;
+
+    margin-right: 5px;
+}
+
+.congratulation .btn {
+    background-color: #E3B04B;
+}
+
+.congratulation a {
+    margin-top: 10px;
+    color: white;
+}
+
+.congratulation:hover a {
+    color: #2b2b2b;
+}
+
+/*  쿠폰, 마이페이지 공통  */
+.mypage_contents {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.mypage_contents .btn {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    box-sizing: border-box;
+    color: #2b2b2b;
+}
+
+/* 쿠폰 버튼 영역 */
+.coupon {
+    display: flex;
+    flex-flow: column;
+}
+
+.coupon a {
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.coupon a::before {
+    content: "\f145";
+    font: var(--fa-font-solid);
+    font-size: 18px;
+    line-height: 48px;
+    width: 50px;
+    box-sizing: border-box;
+    border: 1px solid #F1D6AB;
+    border-collapse: collapse;
+    border-radius: 2px 0 0 2px;
+    background-color: #F1D6AB;
+    color: #2b2b2b;
+}
+
+.coupon a::after {
+    content: "";
+    margin-right: 3px;
+}
+
+/* 마이페이지 버튼 영역 */
+.mypage {
+    display: flex;
+    flex-flow: column;
+}
+
+.mypage a {
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.mypage a::before {
+    content: "\f2bd";
+    font: var(--fa-font-solid);
+    font-size: 18px;
+    line-height: 48px;
+    width: 50px;
+    box-sizing: border-box;
+    border: 1px solid #F1D6AB;
+    border-collapse: collapse;
+    border-radius: 2px 0 0 2px;
+    background-color: #F1D6AB;
+    color: #2b2b2b;
+}
+
+.mypage a::after {
+    content: "";
+    margin-right: 3px;
+}
+
+/* --- 쿠폰, 마이페이지 hover --- */
+.mypage_contents>.coupon:hover a::before,
+.mypage_contents>.mypage:hover a::before {
+    background-color: #E3B04B;
+}

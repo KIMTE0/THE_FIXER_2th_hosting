@@ -1,0 +1,173 @@
+/* =========== 공통부분, Header, oo탭영역 =========== */
+
+/* --- 인라인 블럭 처리 구역, 가상 선택자 --- */
+
+/*
+색상 복붙
+
+===흰색===
+#FFF
+#F8F8F8
+
+===주황색===
+#F1D6AB
+#E3B04B
+#FBD46D
+
+===검정색===
+#2b2b2b
+#000
+
+===회색===
+#6B6B6B
+#595959
+#949494
+
+border:1px solid #F2F2F2; 
+    box-shadow:1px 1px 2px 0 rgb(0 0 0 / 20%);
+
+border:1px solid #e5e5e5;
+*/
+/* =========== 공통부분 =========== */
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    /* outline: 1px solid; */
+}
+
+body {
+    width: 100%;
+    min-width: 1280px;
+}
+
+main {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+
+    font-family: 'Pretendard Regular';
+}
+
+#join_contents_area {
+    width: 100%;
+}
+
+.join_contents {
+    width: 1000px;
+    height:560px;
+    margin:0 auto;
+    overflow:hidden;
+
+    /* font-family: 'Pretendard Black'; */
+}
+
+/* --- 메인 소개 --- */
+#join_contents_area .join_contents h2 {
+    width: 100%;
+    line-height:45px;
+
+    text-align: center;
+    font-size:48px;
+    font-family: 'Pretendard Bold';
+    letter-spacing: -2px;
+    color: black;
+    margin: 50px 0;
+}
+
+#join_contents_area .join_contents h2 p > span {
+    font-size:21px;
+    font-family: 'Pretendard Thin';
+}
+
+/* --- 회원가입 영역 --- */
+/* margin 대신하여 flex 배운 것 활용하여 정렬 */
+.join_box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+}
+
+.join_box ul {
+    float: left;
+    display: inline-flex;
+    width:450px;
+    height:230px;
+    background:#fff;
+
+    box-sizing: border-box;
+    border:1px solid #F2F2F2; 
+    box-shadow:1px 1px 2px 0 rgb(0 0 0 / 20%);
+    padding:35px;
+    /* margin: 0 calc((100% - 900px)/4); */
+}
+
+/* --- 일반회원 영역 --- */
+.join_box .title {
+    line-height:23px;
+    font-size:16px;
+    font-family: 'Pretendard Black';
+
+    /* letter-spacing:-1px; */
+    color: black;
+    margin:0 0 10px 0;
+}
+
+.join_box .title > span {
+    font-size:13px;
+    font-family: 'Pretendard Regular';
+    color:#6b6b6b;
+}
+
+.join_box .nomal {
+    position:relative;
+    width:100%;
+    float:left;
+}
+
+.join_box .btn {
+    display:inline-block;
+    width:100%;
+    height:50px;
+    line-height:50px;
+    text-align:center;
+    font-size:18px;
+    font-family: 'Pretendard Black';
+
+    color:#fff;
+    background:#E3B04B;
+    margin-bottom:10px;
+}
+
+.join_box .so_btn {
+    background:#fff;
+    border:1px solid #e5e5e5;
+    color:#6b6b6b;
+}
+
+.join_box .so_btn .ico {
+    background: url('./image/join_social_ico.png') no-repeat 0 0;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-top: -1px;
+    margin-left: -1px;
+}
+
+.join_box .so_btn .kakao {
+    background: url('./image/join_social_ico.png') no-repeat -55px 0;
+}
+
+.social:nth-child(1) a {
+    margin-bottom: 15px;
+}
+
+/* --- 일반회원 가입 hover --- */
+.nomal>a:hover {
+    color: #2b2b2b;
+}

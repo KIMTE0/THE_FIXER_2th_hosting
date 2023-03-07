@@ -1,0 +1,66 @@
+/* =========== 공통부분, Header, oo탭영역 =========== */
+
+/* --- 인라인 블럭 처리 구역, 가상 선택자 --- */
+
+/*
+색상 복붙
+
+===흰색===
+#FFF
+#F8F8F8
+
+===주황색===
+#F1D6AB
+#E3B04B
+#FBD46D
+
+===검정색===
+#2b2b2b
+#000
+
+===회색===
+#6B6B6B
+#595959
+#949494
+
+border:1px solid #F2F2F2; 
+box-shadow:1px 1px 2px 0 rgb(0 0 0 / 20%);
+
+border:1px solid #e5e5e5;
+*/
+
+
+/* =========== Lower_page_head =========== */
+/*  <!-- font-awesome script -->
+    <script src="https://kit.fontawesome.com/1c647ee8b4.js" crossorigin="anonymous"></script>
+    <!-- 폰트 + 페이지 css -->
+    <link rel="stylesheet" href="../font/font.css">
+    <link rel="stylesheet" href="../header/header.css">
+    <link rel="stylesheet" href="../footer/footer.css"> */
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    /* outline: 1px solid; */
+}
+
+body {
+    width: 100%;
+    min-width: 1280px;
+}
+
+main {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+
+    font-family: 'Pretendard Regular';
+}
+
+/*
+f2bd -> mypage
+f145 -> coupon
+f07a -> cart
+*/

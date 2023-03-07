@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE_FIXER_HOMEPAGE</title>
+
+    <!-- font-awesome + script -->
+    <script src="https://kit.fontawesome.com/1c647ee8b4.js" crossorigin="anonymous"></script>
+    <script defer src="./index.js"></script>
+    <!-- 폰트 + 페이지 css -->
+    <link rel="stylesheet" href="../font/font.css">
+    <link rel="stylesheet" href="../header/header.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <header>
+        <div class="header_wrap header">
+            <div class="top-header">
+                <div class="topcoupon">
+                    <a href="./member_join/member_join.html" class="freecoupon">지금 회원 가입 시, 첫 주문 배송비 무료쿠폰 증정!</a>
+                </div>
+                <div class="loginMenu">
+                    <div class="search-box" id="search-box">
+                        <input type="text" class="search-txt" name="" placeholder="찾으시는 제품을 입력해 주세요.">
+                        <a class="search-btn" href="#" id="search-btn">
+                            <i></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <!-- ============메인로고, 메뉴카테고리========================== -->
+            <!-- ===========상단 메뉴============ -->
+
+            <nav class="header_nav">
+                <div class="navbar">
+                    <a href="./index.html"><img class="nav_logo" src="./image/logo_OG_com.png" alt="THE FIXER LOGO"></a>
+
+
+                    <!-- 드롭다운1 -->
+                    <div class="dropdown" id="dropdown">
+                        <!-- dropdown button -->
+                        <!-- 햄버거 button -->
+                        <button class="dropbtn">
+                            <a class="category" href="#">
+                                <input type="checkbox" id="check_box">
+                                <label class="burgerx" for="check_box">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </label>카테고리
+                            </a>
+                        </button>
+                        <!-- 드롭다운 내용물 -->
+                        <div class="dropdown-content">
+                            <!-- 드롭다운 내용물 : 제목 -->
+                            <!-- <div class="header">
+                                        <h2>메가 메뉴</h2>
+                                    </div> -->
+                            <!-- 드롭다운 내용물 : 카테고리 모음 -->
+                            <div class="row">
+                                <!-- <div class="category_top">
+                                    <span>전체메뉴</span>
+                                </div> -->
+
+                                <div class="menu_page">
+                                    <ul class="header_menu">
+                                        <li class="has-dropdown">
+                                            <a href="#">CPU</a>
+                                            <div class="mega_menu">
+                                                <div class="col">
+                                                    <ul>
+                                                        <li>INTEL</li>
+                                                        <li>AMD</li>
+                                                        <li>서버용</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="has-dropdown">
+                                            <a href="#">메인보드</a>
+                                            <div class="mega_menu">
+                                                <div class="col">
+                                                    <ul>
+                                                        <li>테스트</li>
+                                                        <li>테스트</li>
+                                                        <li>테스트</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="has-dropdown">
+                                            <a href="#">RAM</a>
+                                            <div class="mega_menu">
+                                                <div class="col">
+                                                    <ul>
+                                                        <li>테스트</li>
+                                                        <li>테스트</li>
+                                                        <li>테스트</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="has-dropdown">
+                                            <a href="#">그래픽카드</a>
+                                            <div class="mega_menu">
+                                                <div class="col">
+                                                    <ul>
+                                                        <li>테스트</li>
+                                                        <li>테스트</li>
+                                                        <li>테스트</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="has-dropdown">
+                                            <a href="#">저장장치</a>
+                                            <div class="mega_menu">
+                                                <div class="col">
+                                                    <ul>
+                                                        <li>테스트</li>
+                                                        <li>테스트</li>
+                                                        <li>테스트</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="has-dropdown">
+                                            <a href="#">파워</a>
+                                            <div class="mega_menu">
+                                                <div class="col">
+                                                    <ul>
+                                                        <li>테스트</li>
+                                                        <li>테스트</li>
+                                                        <li>테스트</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="has-dropdown">
+                                            <a href="#">케이스</a>
+                                            <div class="mega_menu">
+                                                <div class="col">
+                                                    <ul>
+                                                        <li>테스트</li>
+                                                        <li>테스트</li>
+                                                        <li>테스트</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <!-- <a href="./best_seller/best_seller.html">FIXER 추천!</a> -->
+                        <a href="https://hakro11.github.io/best_seller_page/">FIXER 추천!</a>
+                    </div>
+
+                    <div>
+                        <a href="./community/community_main.html">커뮤니티</a>
+                    </div>
+
+                    <div>
+                        <a href="./service_center/service_center.html">고객센터</a>
+                    </div>
+
+                    <div class="loginMenu">
+                        <ul>
+                            <li>
+                                <a href="./log_in/log_in.html">로그인 &#124;</a>
+                            </li>
+                            <li>
+                                <a href="./shopping_basket/Shopping_Basket.html">장바구니 &#124;</a>
+                            </li>
+                            <li>
+                                <a href="./mypage/mypage.html">마이페이지 &#124;</a>
+                            </li>
+                            <li>
+                                <a href="./service_center/service_center.html">고객센터</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!--=================슬라이드========================= -->
+        <div class="section">
+            <div class="slidewrap">
+                <div class="slidelist-container">
+                    <ul class="slidelist">
+                        <li>
+                            <img src="./image/mainslide-img_img4.jpg" class="imgslide" alt="">
+                        </li>
+                        <li>
+                            <img src="./image/mainslide-img2.jpg" class="imgslide" alt="">
+                        </li>
+                        <li>
+                            <img src="./image/mainslide-img3.png" class="imgslide" alt="">
+                        </li>
+                    </ul>
+                    <a class="button left" href="#">&lsaquo;</a>
+                    <a class="button right" href="#">&rsaquo;</a>
+                </div>
+                <div class="buttonlist"></div>
+            </div>
+        </div>
+
+
+
+        <!-- ===========================상품 중간 슬라이드========== -->
+
+        <div class="middle_section">
+            <div class="middle_section_left">
+                <ul>
+                    <li class="middleSectionContent">주요 상품 !
+                        <img src="./image/LeftBanner.jpg" alt="">
+                    </li>
+                    <li class="middleSectionContent2">추천 상품입니다~@
+                    </li>
+                </ul>
+            </div>
+            <div class="middle_section_middle">
+                <div class="img_slide_list">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="./image/testSlide.jpg" alt="">
+                            </a>
+                            <span>나야 나!!!!!11111</span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./image/testSlide2.jpg" alt="">
+                            </a>
+                            <span>나야 나!!!!!2222</span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./image/testSlide3.jpg" alt="">
+                            </a>
+                            <span>나야 나!!!!!33333</span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./image/testSlide4.jpg" alt="">
+                            </a>
+                            <span>나야 나!!!!!44444</span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./image/testSlide5.jpg" alt="">
+                            </a>
+                            <span>나야 나!!!!!55555</span>
+                        </li>
+                    </ul>
+                    <div class="middle_section_arrow">
+                        <a class="left_arrow" href="#">
+                            <img src="./image/arrow_icon.png" alt="Left Arrow">
+                        </a>
+                        <a class="right_arrow" href="#">
+                            <img src="./image/arrow_icon.png" alt="Right Arrow">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="middle_section_right">
+                <div class="middleSectionList">
+                    <ul>
+                        <li class="productSix">
+                            <a href="./product_details_page/product_details_page.html">
+                                <dl>
+                                    <dt>[FIXER] 아이웍스7-156(5700g/내장그래픽...</dt>
+                                    <dd>
+                                        <span>8%</span>
+                                        <span>
+                                            <b>529,000</b>
+                                            "원"
+                                        </span>
+                                    </dd>
+                                </dl>
+                                <span class="productList">
+                                    <img src="./image/intel 12th_I9-12900K.jpg" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <li class="productSix">
+                            <a href="./product_details_page/product_details_page.html">
+                                <dl>
+                                    <dt>[FIXER] 아이웍스7-156(5700g/내장그래픽...</dt>
+                                    <dd>
+                                        <span>8%</span>
+                                        <span>
+                                            <b>529,000</b>
+                                            "원"
+                                        </span>
+                                    </dd>
+                                </dl>
+                                <span class="productList">
+                                    <img src="./image/intel 12th_I9-12900K.jpg" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <li class="productSix">
+                            <a href="./product_details_page/product_details_page.html">
+                                <dl>
+                                    <dt>[FIXER] 아이웍스7-156(5700g/내장그래픽...</dt>
+                                    <dd>
+                                        <span>8%</span>
+                                        <span>
+                                            <b>529,000</b>
+                                            "원"
+                                        </span>
+                                    </dd>
+                                </dl>
+                                <span class="productList">
+                                    <img src="./image/intel 12th_I9-12900K.jpg" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <li class="productSix">
+                            <a href="./product_details_page/product_details_page.html">
+                                <dl>
+                                    <dt>[FIXER] 아이웍스7-156(5700g/내장그래픽...</dt>
+                                    <dd>
+                                        <span>8%</span>
+                                        <span>
+                                            <b>529,000</b>
+                                            "원"
+                                        </span>
+                                    </dd>
+                                </dl>
+                                <span class="productList">
+                                    <img src="./image/intel 12th_I9-12900K.jpg" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <li class="productSix">
+                            <a href="./product_details_page/product_details_page.html">
+                                <dl>
+                                    <dt>[FIXER] 아이웍스7-156(5700g/내장그래픽...</dt>
+                                    <dd>
+                                        <span>8%</span>
+                                        <span>
+                                            <b>529,000</b>
+                                            "원"
+                                        </span>
+                                    </dd>
+                                </dl>
+                                <span class="productList">
+                                    <img src="./image/intel 12th_I9-12900K.jpg" alt="">
+                                </span>
+                            </a>
+                        </li>
+                        <li class="productSix">
+                            <a href="./product_details_page/product_details_page.html">
+                                <dl>
+                                    <dt>[FIXER] 아이웍스7-156(5700g/내장그래픽...</dt>
+                                    <dd>
+                                        <span>8%</span>
+                                        <span>
+                                            <b>529,000</b>
+                                            "원"
+                                        </span>
+                                    </dd>
+                                </dl>
+                                <span class="productList">
+                                    <img src="./image/intel 12th_I9-12900K.jpg" alt="">
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- =======================중간 gif=============== -->
+        <!-- ============공백=============== -->
+
+        <div class="marginDiv"></div>
+        <!-- =====================두번째 슬라이드================= -->
+        <div class="secondSlide">
+            <div class="secondSlideLeft">
+                <div class="secondSlide_content">
+                    <b>인기 아이템</b><br>
+                    원하는게 있으면 구매하세요
+                </div>
+            </div>
+
+            <div class="secondSlideBox">
+                <!-- <div class="secondSlide_arrow">
+                        <a class="leftArrow" href="#">
+                            <img src="./image/arrow_icon.png" alt="">
+                        </a>
+                        <a class="rightArrow" href="#">
+                            <img src="./image/arrow_icon.png" alt="">
+                        </a>
+                    </div> -->
+                <ul class="secondSlideList">
+                    <li>
+                        <a href="#">
+                            <span>
+                                <img src="./image/slide1.jpg" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>
+                                <img src="./image/slide2.jpg" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>
+                                <img src="./image/slide3.jpg" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>
+                                <img src="./image/slide4.jpg" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>
+                                <img src="./image/slide5.jpg" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>
+                                <img src="./image/slide6.jpg" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>
+                                <img src="./image/slide7.jpg" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>
+                                <img src="./image/slide8.jpg" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>
+                                <img src="./image/slide9.jpg" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>
+                                <img src="./image/slide10.jpg" alt="">
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+        <!-- =========중간 사양별 추천=============================== -->
+        <div class="computer">
+            <div class="gm">
+                <div><span class="games">게임별 추천 상품</span></div>
+                <div class="gameName">
+                    <span><a href="#" data-img="league.jpg">리그오브레전드</a></span>
+                    <span>|</span>
+                    <span><a href="#" data-img="lost.jpg">로스트아크</a></span>
+                    <span>|</span>
+                    <span><a href="#" data-img="valo.png">발로란트</a></span>
+                    <span>|</span>
+                    <span><a href="#" data-img="battle.jpg">배틀그라운드</a></span>
+                    <span>|</span>
+                    <span><a href="#" data-img="fifa.jpg">피파온라인</a></span>
+                </div>
+
+            </div>
+            <div>
+                <div class="spec">
+                    <div>
+                        <div class="case case1">
+                            <a href="#" class="computerSpec">
+                                <img src="../image/computer_img1.png" class="comPic" alt="추천 사양1">
+                                <span class="spectext spectext1">THE.FIXER-특가 제품-BEST-1</span>
+                                <span class="spectext spectext2">AMD Ryzen PRO4 4600G</span>
+                                <span class="spectext spectext3">330,000원</span>
+                            </a>
+                        </div>
+                        <div class="case case2">
+                            <a href="#" class="computerSpec">
+                                <img src="./image/computer_img2.png" class="comPic" alt="추천 사양1">
+                                <span class="spectext spectext1">AMD 라이젠5 4세대 5600G 탑재PC</span>
+                                <span class="spectext spectext2">AMD 라이젠5 4세대 5600G</span>
+                                <span class="spectext spectext3">378,000원</span>
+                            </a>
+                        </div>
+                        <div class="case case3">
+                            <a href="#" class="computerSpec">
+                                <img src="./image/computer_img3.png" class="comPic" alt="추천 사양1">
+                                <span class="spectext spectext1">THE.FIXER-특가 제품-BEST-2</span>
+                                <span class="spectext spectext2">i3 12100F + RX6500XT</span>
+                                <span class="spectext spectext3">634,800원</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======================================================== -->
+            <div class="computer2">
+                <div class="gm2">
+                    <div>
+                        <span class="games">용도별 추천 상품</span>
+                    </div>
+                    <div class="officeName">
+                        <span><a href="#">사무용</a></span>
+                        <span>|</span>
+                        <span><a href="#">디자인</a></span>
+                        <span>|</span>
+                        <span><a href="#">영상편집</a></span>
+                        <span>|</span>
+                        <span><a href="#">인터넷방송</a></span>
+                    </div>
+                </div>
+                <div>
+                    <div class="spec2">
+                        <div>
+                            <div class="case case1">
+                                <a href="#" class="computerSpec">
+                                    <img src="./image/computer_img1.png" class="comPic" alt="추천 사양">
+                                    <span class="spectext spectext1">THE.FIXER-특가 제품-BEST-3</span>
+                                    <span class="spectext spectext2">intel 펜티엄 6405</span>
+                                    <span class="spectext spectext3">283,900원</span>
+                                </a>
+                            </div>
+                            <div class="case case2">
+                                <a href="#" class="computerSpec">
+                                    <img src="./image/computer_img3.png" class="comPic" alt="추천 사양">
+                                    <span class="spectext spectext1">인텔 12세대 12100 사무용 PC</span>
+                                    <span class="spectext spectext2">intel i3 12100</span>
+                                    <span class="spectext spectext3">381,500원</span>
+                                </a>
+                            </div>
+                            <div class="case case3">
+                                <a href="#" class="computerSpec">
+                                    <img src="./image/computer_img3.png" class="comPic" alt="추천 사양">
+                                    <span class="spectext spectext1">AMD 라이젠5 4세대 5700G 탑재</span>
+                                    <span class="spectext spectext2">Ryzen 세잔 5700G</span>
+                                    <span class="spectext spectext3">545,100원</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============중간 사양별 추천=============================== -->
+                <div>
+                    <img src="" alt="">
+                </div>
+                <div>
+                    <img src="" alt="">
+                </div>
+                <div>
+                    <img src="" alt="">
+                </div>
+                <div>
+                    <img src="" alt="">
+                </div>
+                <div>
+                    <img src="" alt="">
+                </div>
+            </div>
+            <hr>
+
+        </div>
+        <div class="gifbox">
+            <div class="imgbox">
+                <!-- <div><img src="../image/mid.gif" class="midgif" alt=""></div> -->
+                <div class="reviewbox">
+                    <img src="../image/midgif2.gif" class="midgif2" alt="">
+                    <!-- =======구매후기============ -->
+                    <div class="review">
+                        <div class="review-txt1">
+                            <a href="#">구매후기</a>
+                            <a href="#">더보기</a>
+                        </div>
+                        <table class="table1">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a href="#">
+                                            <div class="reviewimg1"></div>
+                                        </a>
+                                    </td>
+                                    <td class="reviewStar">
+                                        <p>[구매후기]</p>
+                                        <a href="#">
+                                            <div>잘 받았습니다^^</div>
+                                            <div>
+                                                <img class="redstar" src="./image/star.png" alt="붉은별">
+                                                <img class="redstar" src="./image/star.png" alt="붉은별">
+                                                <img class="redstar" src="./image/star.png" alt="붉은별">
+                                                <img class="redstar" src="./image/star.png" alt="붉은별">
+                                                <img class="redstar" src="./image/star.png" alt="붉은별">
+                                            </div>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#">
+                                            <div class="reviewimg2"></div>
+                                        </a>
+                                    </td>
+                                    <td class="reviewStar">
+                                        <p>[구매후기]</p>
+                                        <a href="#">
+                                            <div>아직까진 좋아요~</div>
+                                            <div>
+                                                <img class="redstar" src="./image/star.png" alt="붉은별">
+                                                <img class="redstar" src="./image/star.png" alt="붉은별">
+                                                <img class="redstar" src="./image/star.png" alt="붉은별">
+                                                <img class="redstar" src="./image/whitestar.png" alt="흰별">
+                                                <img class="redstar" src="./image/whitestar.png" alt="흰별">
+                                            </div>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#">
+                                            <div class="reviewimg3"></div>
+                                        </a>
+                                    </td>
+                                    <td class="reviewStar">
+                                        <p>[구매후기]</p>
+                                        <a href="#">
+                                            <div>최악이네요..</div>
+                                            <div>
+                                                <img class="redstar" src="./image/star.png" alt="붉은별">
+                                                <img class="redstar" src="./image/whitestar.png" alt="흰별">
+                                                <img class="redstar" src="./image/whitestar.png" alt="흰별">
+                                                <img class="redstar" src="./image/whitestar.png" alt="흰별">
+                                                <img class="redstar" src="./image/whitestar.png" alt="흰별">
+                                            </div>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- ========견적문의=============== -->
+
+                    <div class="review2">
+                        <div class="review-txt2">
+                            <a href="#">견적문의</a>
+                            <a href="#">더보기</a>
+                        </div>
+                        <div class="reviewdown">
+                            <a href="#">
+                                <div>조립 주문시 택배비는 무료</div>
+                                <div><span>100% 정품 </span>및 새제품 사용! 구매전<span> 호환성 검사</span> 필수!</div>
+                            </a>
+                        </div>
+                        <div class="Inquiry">
+                            <div>12-25 15:02</div>
+                            <div><a href="#">이 상태에서 케이스를 못고르겠어요</a></div>
+                            <div>hs***</div>
+                            <div>답변완료</div>
+                        </div>
+                        <div class="Inquiry">
+                            <div>12-25 15:02</div>
+                            <div><a href="#">인텔 13세대 견적 문의드립니다.</a></div>
+                            <div>er***</div>
+                            <div>답변완료</div>
+                        </div>
+                        <div class="Inquiry">
+                            <div>12-25 15:02</div>
+                            <div><a href="#">견적 부탁드립니다.</a></div>
+                            <div><span>ny***</span></div>
+                            <div>답변완료</div>
+                        </div>
+                        <div class="Inquiry">
+                            <div>12-25 15:02</div>
+                            <div><a href="#">최신 사양으로 견적부탁드립니다.</a></div>
+                            <div>sh***</div>
+                            <div>답변완료</div>
+                        </div>
+                        <div class="Inquiry">
+                            <div>12-25 15:02</div>
+                            <div><a href="#">70만원 내외로 견적부탁드려요~</a></div>
+                            <div>kj***</div>
+                            <div>답변완료</div>
+                        </div>
+                        <div class="Inquiry">
+                            <div>12-25 15:02</div>
+                            <div><a href="#">간단한 사무용으로 견적알려주세요!</a></div>
+                            <div>jh***</div>
+                            <div>답변완료</div>
+                        </div>
+                        <div class="Inquiry">
+                            <div>12-25 15:02</div>
+                            <div><a href="#">배틀그라운드를 하고싶은데..</a></div>
+                            <div>ll***</div>
+                            <div>답변완료</div>
+                        </div>
+                        <div class="Inquiry">
+                            <div>12-25 15:02</div>
+                            <div><a href="#">이 정도 사양으로는 어느정도일까요?</a></div>
+                            <div>cw***</div>
+                            <div>답변완료</div>
+                        </div>
+                        <div class="Inquiry">
+                            <div>12-25 15:02</div>
+                            <div><a href="#">영상, 사진 편집용으로 견적 부탁드립니다.</a></div>
+                            <div>km***</div>
+                            <div>답변완료</div>
+                        </div>
+                        <div class="Inquiry">
+                            <div>12-25 15:02</div>
+                            <div><a href="#">견적 문의는 무료인가요???</a></div>
+                            <div>lh***</div>
+                            <div>답변완료</div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="gif_review">
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer">
+            <div class="contain">
+                <div class="footerTop">
+                    <img src="../image/footer.png" alt="컴퓨터회사이미지">
+                </div>
+                <div class="footerBottom">
+                    <div class="info">
+                        <span class="sub_title">Company Information</span>
+                        <ul>
+                            <li>
+                                <span>경기도 성남시 분당구 돌마로 46 KR 5층 성남 그린 컴퓨터 아카데미</span>
+                            </li>
+                            <li>
+                                <span>대표 : 최원석</span><br>
+                                <span>개인정보보호 담당자 : 이학로</span>
+                            </li>
+                            <li>
+                                <span>상담 및 AS : 1234-1234</span><br>
+                                <span>FAX : 031-1234-1234</span><br>
+                                <span>이메일 : thefixer@gmail.com</span>
+                            </li>
+                            <li>
+                                <span>사업자번호 : 123-1234</span>
+                                <span>통신판매신고 : 1234-성남그린-12345</span><br>
+                                <span>분쟁조정기관표시 : 소비자보호원</span><br>
+                                <span>호스팅제공자 : (주)THE FIXER</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_two">
+                        <div class="footerline">
+                            <!-- <div class="footernotice">공지사항</div> -->
+                            <ul class="footerinfo">
+                                <li>
+                                    <a href="#">회사소개</a>
+                                </li>
+                                <li>
+                                    <a href="#">이용약관</a>
+                                </li>
+                                <li>
+                                    <a href="#">개인정보취급방침</a>
+                                </li>
+                                <li>
+                                    <a href="#">고객만족센터</a>
+                                </li>
+                                <li>
+                                    <a href="#">제휴문의</a>
+                                </li>
+                                <li>
+                                    <a href="#">맞춤결제</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer_img">
+                            <a href="https://www.facebook.com/"><img class="footer_icon" src="./image/facebook_icon.png"
+                                    alt="Facebook 아이콘"></a>
+                            <a href="https://www.instagram.com/"><img class="footer_icon"
+                                    src="./image/instagram_icon.png" alt="instagram 아이콘"></a>
+                            <a href="https://blog.naver.com/greenseongnam"><img class="footer_icon3"
+                                    src="./image/naver_blog_icon.png" alt="네이버 블로그 아이콘"></a>
+                            <a href="https://twitter.com/"><img class="footer_icon4" src="./image/twitter_icon.png"
+                                    alt="twitter 아이콘"></a>
+                            <a href="https://www.youtube.com/"><img class="footer_icon" src="./image/youtube_icon.png"
+                                    alt="Youtube 아이콘"></a>
+                        </div>
+                        <div>
+                            <img class="footer_logo" src="./image/logo_BK_com.png" alt="THE FIXER 로고">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
