@@ -82,6 +82,7 @@ function check_id() {
         alert(`         요청하신 아이디
         "${userId}" 은(는)
         사용가능한 아이디 입니다.`);
+        pw_input.focus();
     }
 }
 
