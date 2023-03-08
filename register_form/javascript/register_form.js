@@ -33,7 +33,7 @@ const pwChk = VerEx()
     // .range('A','Z', 'a', 'z', '0', '9')
     // .add(`(?=.*[${spCh}]).`)
     .add(`(?=.*[a-zA-z])(?=.*[0-9])(?=.*[$~!@$!%*#^?&-_]).`)
-    .repeatPrevious(5,20)
+    .repeatPrevious(5, 20)
     .removeModifier('m')
     .endOfLine();
 // ?=.* 0~1회 동안 []문자열이 반복됬는가?
@@ -64,6 +64,7 @@ id_input.addEventListener('change', () => {
 function check_id() {
     let checkValue;
     checkValue = saveID.indexOf(userId);
+    idChk.lastIndex = 0;
 
     if (userId === undefined) {
         alert('아이디를 입력하세요.');
@@ -72,12 +73,12 @@ function check_id() {
         alert(`아이디는 영문자/숫자 조합 5자리 이상 12자리 이하로 사용해야합니다.`);
         id_input.focus();
         // id_input.value = "";
-    } else if (checkValue === 0 || checkValue === 1 && checkValue !== -1) {
+    } else if ((checkValue === 0 || checkValue === 1) && checkValue !== -1) {
         alert(`         요청하신 아이디
         "${userId}" 은(는)
         사용하실 수 없는 아이디 입니다.`);
         // id_input.value = "";
-    } else if (checkValue == -1) {
+    } else if (checkValue === -1) {
         alert(`         요청하신 아이디
         "${userId}" 은(는)
         사용가능한 아이디 입니다.`);
@@ -89,6 +90,8 @@ checkBtn[0].addEventListener('click', () => {
 });
 
 function registerChk() {
+    pwChk.lastIndex = 0;
+
     if (pw_input.value == "") {
         alert(`비밀번호를 입력하세요.`);
         pw_input.focus();
